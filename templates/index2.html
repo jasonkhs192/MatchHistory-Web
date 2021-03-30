@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rank Status</title>
+</head>
+<body>
+<p>Hello, {{game_name}}. Welcome to Summoner's Rift!</p>
+<p>{{game_rank}}</p>
+<p>{{game_type}}</p>
+{% if game_custom != None %}
+<p>{{game_custom}}</p>
+{% endif %}
+<p>{{game_map}}</p>
+<p>{{game_result}}</p>
+<p>{{game_length}}</p>
+<p>{{game_start_time}}</p>
+<p>{{game_end_time}}</p>
+<p>{{game_end_time2}}</p>
+<p>{{game_champion}}</p>
+<p>{{game_kda}}</p>
+<p>{{game_survive}}</p>
+{% if game_ward_placed != None %}
+<p>{{game_ward_placed}}</p>
+{% endif %}
+{% if game_ward_kill != None %}
+<p>{{game_ward_kill}}</p>
+{% endif %}
+{% if game_pinkward_buy != None %}
+<p>{{game_pinkward_buy}}</p>
+{% endif %}
+{% if game_vision_score != None %}
+<p>{{game_vision_score}}</p>
+{% endif %}
+
+<button onclick="history.back()">Search Again</button>
+</body>
+</html>

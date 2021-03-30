@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jason's LoL Match History</title>
+</head>
+<body>
+<h1>Jason's LoL Match History</h1>
+<h2>Input Summoner's ID and Match Number</h2>
+<h3>*To view most recent match, type in 0.</h3>
+<h3>*To view second most recent match, type in 1.</h3>
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
