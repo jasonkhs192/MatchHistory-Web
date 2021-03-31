@@ -25,7 +25,7 @@ SECRET_KEY = '5@yqa@b=0!84we$41$hda_8dw)b%po3nx_xd23&ta54)8j3lj#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['matchhistory-web.herokuapp.com']
 
 
 # Application definition
