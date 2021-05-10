@@ -11,7 +11,11 @@ def index(request):
             name = form.cleaned_data['summoner_name']
             match_num = form.cleaned_data['match_number']
 
+<<<<<<< HEAD
         lol_watcher = LolWatcher('RGAPI-6bdcba8a-42c7-4957-910a-955fba53289f')
+=======
+        lol_watcher = LolWatcher('RGAPI-34cf379b-d8d4-460f-a9ba-f69f235559ce')
+>>>>>>> dce1a24351946f826e8cedb1f24db43c875bb97e
         my_region = 'na1'
         me = lol_watcher.summoner.by_name(my_region, name)
         accountID = me["accountId"]
